@@ -5,7 +5,9 @@ function sleep(ms) {
 }
 async function a(){
 while(i < frames.length){
-  console.log(frames[i]);
+  let buff = new Buffer(frames[i], 'base64');
+let text = buff.toString('ascii');
+  console.log(text);
   i++
   await sleep(50);
   process.stdout.write("\u001b[3J\u001b[2J\u001b[1J");
