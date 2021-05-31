@@ -5,9 +5,9 @@ function sleep(ms) {
 }
 async function a(){
 while(i < frames.length){
-  await sleep(50);
   console.log(frames[i]);
   i++
+  await sleep(50);
   process.stdout.write("\u001b[3J\u001b[2J\u001b[1J");
   console.clear();
 }
