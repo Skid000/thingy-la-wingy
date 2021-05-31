@@ -12,3 +12,4 @@ while(i < frames.length){
   i++
 }
 }
+a();
